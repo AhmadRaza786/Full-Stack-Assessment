@@ -1,0 +1,63 @@
+.header {
+  color: white;
+
+  .navbar {
+    height: 72px;
+  }
+
+  .hero-headline {
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+    text-shadow: 2px 2px #896AF9;
+    margin-inline-start: 15px;
+    margin-inline-end: 15px;
+  }
+
+  .hero-description {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+
+
+.button {
+  width: 193px;
+  height: 48px;
+  border-radius: 12px;
+  border: 1px solid #896AF9;
+  padding: 10px, 24px, 10px, 24px;
+  background-color: white;
+  box-shadow: 4px 4px 0px -1px #896AF9;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 28px;
+  color: #896AF9;
+}
+
+.layout {
+  background-color: #FFF9E6;
+  color: black;
+
+  .tag-line {
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .heading {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0em;
+  }
+
+  .text {
+
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0em;
+  }
+}

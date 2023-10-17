@@ -1,0 +1,33 @@
+<div class="container">
+  <ion-select [(ngModel)]="selectedDate">
+    <ion-select-option value="Date" disabled selected>Date</ion-select-option>
+    <ion-select-option
+      placeholder="Date"
+      *ngFor="let date of dates"
+      [value]="date"
+      >{{ date }}</ion-select-option
+    >
+  </ion-select>
+
+  <ion-select [(ngModel)]="selectedMonth">
+    <ion-select-option value="Month" disabled selected>Month</ion-select-option>
+
+    <ion-select-option
+      placeholder="Month"
+      *ngFor="let month of months"
+      [value]="month.value"
+      >{{ month.name }}</ion-select-option
+    >
+  </ion-select>
+
+  <ion-select [(ngModel)]="selectedYear">
+    <ion-select-option value="Year" disabled selected>Year</ion-select-option>
+
+    <ion-select-option
+      placeholder="Year"
+      *ngFor="let year of years"
+      [value]="year"
+      >{{ year }}</ion-select-option
+    >
+  </ion-select>
+</div>

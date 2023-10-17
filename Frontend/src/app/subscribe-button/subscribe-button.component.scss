@@ -1,0 +1,22 @@
+.subButton{
+  display: flex;
+  justify-content: center;
+.button {
+  height: 48px;
+  --border-radius: 12px;
+  --border: 1px solid #896af9;
+  border-radius: 12px;
+  border: 1px solid #896af9;
+  --padding-top: 10px;
+  --padding-end: 24px;
+  --padding-bottom: 10px;
+  --padding-start: 24px;
+  --background: white;
+  text-transform: capitalize;
+  box-shadow: 4px 4px 0px -1px #896af9;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 28px;
+  color: #896af9;
+}
+}

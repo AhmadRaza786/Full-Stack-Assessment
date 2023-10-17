@@ -1,0 +1,270 @@
+ion-item {
+  --padding-start: 0px;
+  --inner-padding-end: 0px;
+  --background: transparent;
+  font-family: "Nunito", sans-serif;
+  ion-label.heading {
+    font-family: "Nunito", sans-serif;
+    h2 {
+      font-size: 24px;
+      font-weight: 700;
+      color: #202124;
+      font-family: "Nunito", sans-serif;
+    }
+    span {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      color: #202124;
+      font-family: "Nunito", sans-serif;
+    }
+  }
+}
+
+.container {
+  padding: 16px;
+  background: url(../../assets/background.png);
+  background-size: cover;
+  background-position: center;
+  ion-row.content {
+    border-radius: 24px;
+    box-shadow: 0px 0px 52px 0px rgba(185, 169, 205, 0.2);
+    border: 1px solid #bfb8d7;
+    overflow: hidden;
+    max-width: 1024px;
+    font-family: "Nunito", sans-serif;
+    margin: 112px auto;
+
+    ion-col.form {
+      display: flex;
+      padding: 32px 16px;
+      flex-direction: column;
+      align-self: stretch;
+      background: #fff;
+      ion-item-divider {
+        border-color: #d1c5fb;
+        margin: 16px 0px;
+        min-height: 1px;
+      }
+      .input {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 6px;
+        margin-bottom: 24px;
+        ion-input {
+          --border-radius: 8px;
+          --border-width: 1px;
+          --border-color: #d0d5dd;
+          --background: #fff;
+          --box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+          min-height: 44px;
+        }
+        ion-label {
+          color: #344054;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 20px;
+        }
+        ion-select {
+          border-radius: 8px;
+          border: 1px solid #d0d5dd;
+          background: #fff;
+          padding: 0px 14px;
+          box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+          min-height: 44px;
+        }
+        .checkbox {
+          display: flex;
+          gap: 8px;
+          ion-checkbox {
+            display: flex;
+            padding: 10px 14px;
+            align-items: center;
+            gap: 8px;
+            flex: 1 0 0;
+            border-radius: 8px;
+            border: 1px solid #d0d5dd;
+            background: #fff;
+            --border-color: #fff;
+            --checkmark-color: #3880ff;
+            --size: 16px;
+            --border-radius: 100px;
+            box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+            color: #202124;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+
+            .checkbox-icon {
+              position: absolute;
+              right: 11px;
+              z-index: 110;
+              top: 10px;
+              font-size: 22px;
+              color: #d0d5dd;
+            }
+            &.checkbox-checked .checkbox-icon {
+              color: #fff;
+            }
+          }
+        }
+      }
+      .subscribe-button {
+        display: block;
+        margin-top: 72px;
+        .button {
+          width: 80%;
+        }
+        @media (max-width: 768px) {
+          display: none;
+        }
+      }
+    }
+  }
+  .topics {
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 8px;
+    align-self: stretch;
+    flex-wrap: wrap;
+    padding-top: 12px;
+  }
+}
+
+.checkmark {
+  width: max-content;
+  max-height: 35px;
+  input {
+    width: 100%;
+    height: 28px;
+    position: relative;
+    z-index: 999;
+    visibility: hidden;
+
+    &::after {
+      content: " ";
+      width: 100%;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      height: 28px;
+      z-index: 111;
+      visibility: visible;
+    }
+  }
+  input:checked + span {
+    color: #002db3;
+    background: #f4f1fe;
+    border: 1px solid #63f;
+    color: #63f;
+  }
+  span {
+    display: flex;
+    padding: 4px 20px;
+    align-items: center;
+    gap: 8px;
+    border-radius: 48px;
+    border: 1px solid #e1e3e6;
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    color: #667085;
+    transform: translate(0px, -31px);
+  }
+}
+
+.summary-container {
+  padding: 32px 16px;
+  font-family: "Nunito", sans-serif;
+  display: flex;
+  height: auto;
+  flex-direction: column;
+  gap: 24px;
+  background: #f1edfe;
+  .white-box {
+    padding: 16px 16px 40px 16px;
+    border-radius: 8px;
+    background: #fff;
+  }
+  .box {
+    div {
+      width: 50%;
+    }
+    .leftSide {
+      text-align: left;
+    }
+    .rightSide {
+      text-align: end;
+    }
+    span {
+      color: #838383;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      font-family: "Nunito", sans-serif;
+    }
+    p {
+      color: #202124;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      font-family: "Nunito", sans-serif;
+      margin: 0;
+      b {
+        font-weight: 700;
+        font-family: "Nunito", sans-serif;
+      }
+    }
+  }
+  ion-item-divider {
+    min-height: 0px;
+    --background: transparent;
+  }
+
+  .subscribe-button {
+    display: none;
+    @media (max-width: 768px) {
+      display: block;
+    }
+  }
+}
+
+.footer {
+  padding: 48px 50px;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  width: 100%;
+  display: flex;
+  @media (max-width: 768px) {
+    display: none;
+  }
+  > div {
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    > div {
+      display: flex;
+      gap: 32px;
+      ion-label {
+        color: var(--gray-600, #475467);
+
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+      }
+    }
+    p {
+      color: var(--gray-500, #667085);
+      text-align: right;
+
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+    }
+  }
+}

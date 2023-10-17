@@ -1,14 +1,16 @@
-import { Routes } from '@angular/router';
-import { HomeComponent } from './home/home.component';
+import { Routes } from "@angular/router";
+import { HomeComponent } from "./home/home.component";
+import { SubscriptionComponent } from "./subscription/subscription.component";
 
 export const routes: Routes = [
   {
-    path: 'home',
-    component: HomeComponent
+    path: "",
+    component: HomeComponent,
   },
   {
-    path: '',
-    loadChildren: () => import('./tabs/tabs.routes').then((m) => m.routes),
+    path: "subscription",
+    component: SubscriptionComponent,
+    
   },
 
 ];

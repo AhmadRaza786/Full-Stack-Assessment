@@ -1,0 +1,198 @@
+<ion-content>
+  <app-header></app-header>
+  <div class="container">
+    <ion-row class="content">
+      <ion-col class="form" size="12" size-md="8">
+        <ion-item lines="none">
+          <ion-label class="heading">
+            <h2>Subscribe</h2>
+            <span>to our Monthly Surprise Box</span>
+          </ion-label>
+        </ion-item>
+        <ion-item-divider></ion-item-divider>
+        <div>
+          <ion-label class="heading">
+            <h2>Contact Information</h2>
+          </ion-label>
+
+          <div class="input">
+            <ion-label>Your Name</ion-label>
+            <ion-input
+              fill="outline"
+              type="text"
+              placeholder="e.g Osama Alshathri"
+              label-placement="stacked"
+            ></ion-input>
+          </div>
+          <div class="input">
+            <ion-label>Email</ion-label>
+            <ion-input
+              fill="outline"
+              type="text"
+              placeholder="Osama@gmail.com"
+              label-placement="stacked"
+            ></ion-input>
+          </div>
+        </div>
+        <div>
+          <ion-label class="heading">
+            <h2>Child’s Information</h2>
+          </ion-label>
+
+          <div class="input">
+            <ion-label>Child’s Full Name</ion-label>
+            <ion-input
+              fill="outline"
+              type="text"
+              placeholder="e.g Sarah Mohammad"
+              label-placement="stacked"
+            ></ion-input>
+          </div>
+          <div class="input">
+            <ion-label>Child’s Date of Birth</ion-label>
+            <app-date-input></app-date-input>
+          </div>
+          <div class="input">
+            <ion-label>Grade</ion-label>
+            <ion-select [(ngModel)]="selectedGrade">
+              <ion-select-option value="default" disabled selected
+                >e.g Grade 2</ion-select-option
+              >
+
+              <ion-select-option value="A"> A </ion-select-option>
+              <ion-select-option value="B"> B </ion-select-option>
+              <ion-select-option value="C"> C </ion-select-option
+              ><ion-select-option value="D"> D </ion-select-option>
+            </ion-select>
+          </div>
+          <div class="input">
+            <ion-label>Gender</ion-label>
+            <div class="checkbox">
+              <ion-checkbox justify="space-between"
+                >Boy
+                <ion-icon
+                  class="checkbox-icon"
+                  name="checkmark-circle-outline"
+                ></ion-icon>
+              </ion-checkbox>
+              <ion-checkbox justify="space-between"
+                >Girl
+                <ion-icon
+                  class="checkbox-icon"
+                  name="checkmark-circle-outline"
+                ></ion-icon>
+              </ion-checkbox>
+            </div>
+          </div>
+        </div>
+        <div>
+          <ion-label class="heading">
+            <h2>As a parent select any 3 topics</h2>
+          </ion-label>
+          <div class="topics">
+            <div class="checkmark">
+              <input type="checkbox" />
+              <span>Arabic</span>
+            </div>
+            <div class="checkmark">
+              <input type="checkbox" />
+              <span>Islamic</span>
+            </div>
+            <div class="checkmark">
+              <input type="checkbox" />
+              <span>English</span>
+            </div>
+            <div class="checkmark">
+              <input type="checkbox" />
+              <span>History</span>
+            </div>
+            <div class="checkmark">
+              <input type="checkbox" checked />
+              <span>English</span>
+            </div>
+          </div>
+        </div>
+        <app-subscribe-button
+          class="subscribe-button"
+          [buttonText]="'Continue to payment'"
+        ></app-subscribe-button>
+      </ion-col>
+      <ion-col class="summary-container" size="12" size-md="4">
+        <ion-item lines="none">
+          <ion-label class="heading">
+            <h2>Summary</h2>
+            <span>of your Monthly Surprise Box</span>
+          </ion-label>
+        </ion-item>
+        <div class="white-box">
+          <ion-item class="box" lines="none">
+            <div class="leftSide">
+              <p>Mystery Box</p>
+              <span>X 1</span>
+            </div>
+            <div class="rightSide">
+              <p>SAR <b>456</b></p>
+              <span>Monthly</span>
+            </div>
+          </ion-item>
+        </div>
+        <ion-item class="box" lines="none">
+          <div class="leftSide">
+            <p>Subtotal</p>
+          </div>
+          <div class="rightSide">
+            <p>SAR <b>456</b></p>
+          </div>
+        </ion-item>
+        <ion-item class="box" lines="none">
+          <div class="leftSide">
+            <p>Shipping</p>
+          </div>
+          <div class="rightSide">
+            <span>Free</span>
+          </div>
+        </ion-item>
+        <ion-item class="box" lines="none">
+          <div class="leftSide">
+            <p>Taxes</p>
+          </div>
+          <div class="rightSide">
+            <p>SAR <b>4.0</b></p>
+          </div>
+        </ion-item>
+        <ion-item-divider></ion-item-divider>
+        <ion-item class="box" lines="none">
+          <div class="leftSide">
+            <b>Total</b>
+          </div>
+          <div class="rightSide">
+            <p>SAR <b>460</b></p>
+          </div>
+        </ion-item>
+        <app-subscribe-button
+          class="subscribe-button"
+          [buttonText]="'Continue to payment'"
+        ></app-subscribe-button>
+      </ion-col>
+    </ion-row>
+  </div>
+  <div class="footer">
+    <div>
+      <img src="assets//blacklogo.svg" alt="brand logo" />
+
+      <div>
+        <ion-item lines="none">
+          <ion-label>Overview</ion-label>
+        </ion-item>
+        <ion-item lines="none">
+          <ion-label>Help</ion-label>
+        </ion-item>
+        <ion-item lines="none">
+          <ion-label>Privacy</ion-label>
+        </ion-item>
+      </div>
+
+      <p>© 2077 MyEdu</p>
+    </div>
+  </div>
+</ion-content>

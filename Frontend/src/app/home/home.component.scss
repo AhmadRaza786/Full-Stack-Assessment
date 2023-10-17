@@ -1,15 +1,11 @@
 .header {
   color: white;
 
-  .navbar {
-    height: 72px;
-  }
-
   .hero-headline {
     font-weight: 900;
     font-size: 40px;
     line-height: 48px;
-    text-shadow: 2px 2px #896AF9;
+    text-shadow: 2px 2px #896af9;
     margin-inline-start: 15px;
     margin-inline-end: 15px;
   }
@@ -21,26 +17,25 @@
   }
 }
 
+.content {
+  background: #fff9e6 url(../../assets/Group.png) no-repeat center / cover;
+  padding: 112px 64px;
 
+  .subscribe-button {
+    margin: auto;
+    margin-top: 48px;
+    width: fit-content;
+  }
 
-.button {
-  width: 193px;
-  height: 48px;
-  border-radius: 12px;
-  border: 1px solid #896AF9;
-  padding: 10px, 24px, 10px, 24px;
-  background-color: white;
-  box-shadow: 4px 4px 0px -1px #896AF9;
-  font-weight: 900;
-  font-size: 20px;
-  line-height: 28px;
-  color: #896AF9;
+  @media (max-width: 768px) {
+    padding: 56px 16px;
+    background: #fff9e6;
+  }
 }
 
 .layout {
-  background-color: #FFF9E6;
   color: black;
-
+  max-width: 768px;
   .tag-line {
     font-size: 16px;
     font-weight: 600;
@@ -54,7 +49,6 @@
   }
 
   .text {
-
     font-size: 24px;
     font-weight: 400;
     line-height: 36px;

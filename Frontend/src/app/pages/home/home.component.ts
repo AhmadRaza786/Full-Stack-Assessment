@@ -1,10 +1,10 @@
 import { Component, OnInit } from "@angular/core";
 import { IonicModule } from "@ionic/angular";
-import { CardComponent } from "../card/card.component";
 import { CommonModule } from "@angular/common";
-import { SubscribeButtonComponent } from "../subscribe-button/subscribe-button.component";
-import { FooterComponent } from "../footer/footer.component";
-import { HeaderComponent } from "../header/header.component";
+import { CardComponent } from "src/app/components/card/card.component";
+import { SubscribeButtonComponent } from "src/app/components/subscribe-button/subscribe-button.component";
+import { FooterComponent } from "src/app/components/footer/footer.component";
+import { HeaderComponent } from "src/app/components/header/header.component";
 
 @Component({
   selector: "app-home",
@@ -17,7 +17,7 @@ import { HeaderComponent } from "../header/header.component";
     CommonModule,
     SubscribeButtonComponent,
     FooterComponent,
-    HeaderComponent
+    HeaderComponent,
   ],
 })
 export class HomeComponent implements OnInit {

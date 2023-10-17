@@ -67,22 +67,20 @@
           </div>
           <div class="input">
             <ion-label>Gender</ion-label>
-            <div class="checkbox">
-              <ion-checkbox justify="space-between"
+            <ion-radio-group class="genderRadio">
+              <ion-radio
+                value="boy"
+                aria-label="Custom checkbox"
+                justify="space-between"
                 >Boy
-                <ion-icon
-                  class="checkbox-icon"
-                  name="checkmark-circle-outline"
-                ></ion-icon>
-              </ion-checkbox>
-              <ion-checkbox justify="space-between"
+              </ion-radio>
+              <ion-radio
+                value="girl"
+                aria-label="Custom checkbox"
+                justify="space-between"
                 >Girl
-                <ion-icon
-                  class="checkbox-icon"
-                  name="checkmark-circle-outline"
-                ></ion-icon>
-              </ion-checkbox>
-            </div>
+              </ion-radio>
+            </ion-radio-group>
           </div>
         </div>
         <div>
@@ -108,7 +106,7 @@
             </div>
             <div class="checkmark">
               <input type="checkbox" checked />
-              <span>English</span>
+              <span>Sports</span>
             </div>
           </div>
         </div>

@@ -1,9 +1,9 @@
 import { Component, OnInit } from "@angular/core";
 import { IonicModule } from "@ionic/angular";
-import { DateInputComponent } from "../date-input/date-input.component";
 import { FormsModule } from "@angular/forms";
-import { SubscribeButtonComponent } from "../subscribe-button/subscribe-button.component";
-import { HeaderComponent } from "../header/header.component";
+import { SubscribeButtonComponent } from "src/app/components/subscribe-button/subscribe-button.component";
+import { DateInputComponent } from "src/app/components/date-input/date-input.component";
+import { HeaderComponent } from "src/app/components/header/header.component";
 
 @Component({
   selector: "app-subscription",
@@ -15,7 +15,7 @@ import { HeaderComponent } from "../header/header.component";
     DateInputComponent,
     FormsModule,
     SubscribeButtonComponent,
-    HeaderComponent
+    HeaderComponent,
   ],
 })
 export class SubscriptionComponent implements OnInit {
